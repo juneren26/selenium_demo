@@ -45,6 +45,9 @@ browser.switch_to_frame(iframe)
 browser.find_element_by_xpath('//*[@id="switcher_plogin"]').click()
 
 # 输入账号密码登录
-browser.find_element_by_xpath('//input[@id="u"]').send_keys(1339407609)
-browser.find_element_by_xpath('//input[@id="p"]').send_keys('xxxxxxxxxx')
+browser.find_element_by_xpath('//input[@id="u"]').send_keys(1339407609)     #使用个人QQ账号
+browser.find_element_by_xpath('//input[@id="p"]').send_keys('xxxxxxxxxx')   #使用个人QQ密码
 browser.find_element_by_xpath('//*[@id="login_button"]').click()
+
+#退出浏览器
+browser.quit()

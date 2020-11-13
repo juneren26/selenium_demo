@@ -45,7 +45,7 @@ driver.get('http://www.baidu.com')
 # 通过link text查找元素
 # driver.find_element_by_link_text('新闻')
 # 通过partial link text定位
-# driver.find_element_by_link_text('新')
+driver.find_element_by_partial_link_text('新')
 # 通过classname定位
 # driver.find_element_by_class_name("s_ipt")
 # 通过tagname定位

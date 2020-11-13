@@ -18,7 +18,7 @@ browser.execute('get', {'url': 'http://www.baidu.com'})
 
 # 定位百度输入框并输入海贼王
 el = browser.find_element(by="id", value='kw')
-el._execute("sendKeysToElement", {'text': "海贼王",
+el._execute("sendKeysToElement", {'text': "一拳超人",
                                   'value': ''})
 sleep(1)
 

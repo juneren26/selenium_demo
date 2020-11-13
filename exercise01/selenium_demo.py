@@ -18,7 +18,7 @@ driver.get('http://www.baidu.com')
 
 # 定位百度输入框并输入海贼王
 input_ = driver.find_element_by_id('kw')
-input_.send_keys('海贼王')
+input_.send_keys('一拳超人')
 sleep(1)
 
 # 定位、执行搜索操作

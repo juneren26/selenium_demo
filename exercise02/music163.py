@@ -12,7 +12,7 @@ from time import sleep
 # 选择浏览器设置等待
 browser = webdriver.Chrome()
 browser.implicitly_wait(5)
-
+browser.maximize_window()
 # 12点了访问网抑云获取当前窗口句柄
 browser.get('http://music.163.com')
 main_windows = browser.current_window_handle

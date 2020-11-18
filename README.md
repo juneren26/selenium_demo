@@ -1,5 +1,5 @@
 # selenium_demo
-## WebUI自动化练习项目
+## WebUI自动化case_demo
 * exercise01 底层webdriver的实现
 * exercise02 八大元素定位
 1. id
@@ -10,3 +10,4 @@
 6. tagname
 7. cssselector
 8. xpath
+* exercise03 shopxo商城注册登陆

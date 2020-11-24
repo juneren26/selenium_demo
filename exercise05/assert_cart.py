@@ -11,9 +11,10 @@ import time
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
+from exercise06.chrome_options import Options
 # 设置浏览器
-driver = webdriver.Chrome()
-driver.maximize_window()
+driver = webdriver.Chrome(options=Options().options_conf())
+# driver.maximize_window()
 driver.implicitly_wait(3)
 # 获取iphone手机页面并切iframe登陆
 driver.get('http://39.98.138.157/shopxo/index.php?s=/index/goods/index/id/2.html')
@@ -32,11 +33,15 @@ js1 = "document.getElementsByClassName('sku-line  sku-line-images sku-dont-choos
 driver.execute_script(js1)
 js2 = "document.getElementsByClassName('sku-line sku-dont-choose')[1].setAttribute('class','sku-line')"
 driver.execute_script(js2)
-time.sleep(5)
+time.sleep(3)
 driver.find_element(By.XPATH, value='//*[@data-value="套餐一"]').click()
+time.sleep(1)
 driver.find_element(By.XPATH, value='//*[@data-value="金色"]').click()
+time.sleep(1)
 driver.find_element(By.XPATH, value='//*[@data-value="32G"]').click()
+time.sleep(1)
 driver.find_element(By.XPATH, value='//*[@title="加入购物车"]').click()
+time.sleep(1)
 # 切换到购物车页面校验是否加购成功
 driver.find_element_by_xpath('//span[text()="购物车"]').click()
 # product_cart = '苹果（Apple）iPhone 6 Plus (A1524)移动联通电信4G手机 金色 16G'
